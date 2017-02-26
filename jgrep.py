@@ -11,7 +11,7 @@ parser.add_argument('pattern', help='A regex that stack traces should match to b
 parser.add_argument('-b', '--begin', default='^"', help='A regex that marks the beginning of a stack trace.')
 parser.add_argument('-e', '--end', default='^$', help='A regex that marks the end of a stack trace.')
 parser.add_argument('-v', '--invert', action='store_true', default=False, help='Print when NOT matching the pattern.')
-parser.add_argument('-V', '--version', action='version', version='%(prog)s 0.1')
+parser.add_argument('-V', '--version', action='version', version='%(prog)s 0.3')
 parser.add_argument('files', nargs='*', help='A list of files to be parsed, defaults to stdin.')
 args = parser.parse_args()
 
