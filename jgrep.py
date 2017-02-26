@@ -29,6 +29,5 @@ for line in lines:
     if re.search(args.pattern, trace):
         if not args.invert:
             print(trace, end='')
-    else:
-        if args.invert:
-            print(trace, end='')
+    elif args.invert:
+        print(trace, end='')
